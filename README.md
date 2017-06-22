@@ -1,24 +1,5 @@
-# README
+# FindYRpet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###an app that will help people report lost pets, whether its theirs or a stray cat or dog.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+###at this point anything is better than a flyer and instead of relying on facebook groups there can be a dedicated app with descriptions breeds and other valuable information along with a map of locations seen incase the animal its still roaming an area.
