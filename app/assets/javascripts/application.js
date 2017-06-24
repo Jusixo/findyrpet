@@ -13,3 +13,5 @@
 //= require rails-ujs
 
 //= require 'cable'
+//= require 'bootstrap'
+//= require 'tether'
