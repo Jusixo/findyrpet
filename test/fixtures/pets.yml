@@ -7,7 +7,7 @@ one:
   color: MyString
   sex: MyString
   age: 1
-  special_markings: MyString
+  unique_markings: MyString
 
 two:
   name: MyString
@@ -16,4 +16,4 @@ two:
   color: MyString
   sex: MyString
   age: 1
-  special_markings: MyString
+  unique_markings: MyString

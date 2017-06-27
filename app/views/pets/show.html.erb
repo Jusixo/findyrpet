@@ -1,0 +1,35 @@
+<div class="page-header">
+  <%= link_to pets_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_pet_path(@pet), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show pet</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @pet.name %></dd>
+
+  <dt>Species:</dt>
+  <dd><%= @pet.species %></dd>
+
+  <dt>Breed:</dt>
+  <dd><%= @pet.breed %></dd>
+
+  <dt>Color:</dt>
+  <dd><%= @pet.color %></dd>
+
+  <dt>Sex:</dt>
+  <dd><%= @pet.sex %></dd>
+
+  <dt>Age:</dt>
+  <dd><%= @pet.age %></dd>
+
+  <dt>Unique markings:</dt>
+  <dd><%= @pet.unique_markings %></dd>
+
+</dl>

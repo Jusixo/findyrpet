@@ -1,0 +1,53 @@
+<div class="page-header">
+  <%= link_to new_pet_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Pet
+  <% end %>
+  <h1 Listing>pets</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Species</th>
+        <th>Breed</th>
+        <th>Color</th>
+        <th>Sex</th>
+        <th>Age</th>
+        <th>Unique markings</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody class="table-body">
+      <%- @pets.each do |pet| %>
+      <tr>
+        <td><%= pet.name %></td>
+        <td><%= pet.species %></td>
+        <td><%= pet.breed %></td>
+        <td><%= pet.color %></td>
+        <td><%= pet.sex %></td>
+        <td><%= pet.age %></td>
+        <td><%= pet.unique_markings %></td>
+        <td>
+          <%= link_to pet do %>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_pet_path(pet) do %>
+            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to pet, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          <% end %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
