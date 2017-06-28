@@ -26,6 +26,8 @@ gem 'roda'
 gem 'image_processing'
 gem 'mini_magick'
 
+gem 'bcrypt', '~> 3.1.7'
+
 
 
 # Use Redis adapter to run Action Cable in production
